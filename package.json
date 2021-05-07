@@ -1,0 +1,36 @@
+{
+  "name": "updated-object-diff",
+  "version": "1.0.0",
+  "description": "A small library that returns the difference between two JavaScript objects, including nested objects, that handles values of all data types.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "prettier": "./node_modules/.bin/prettier . --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyst/updated-object-diff.git"
+  },
+  "keywords": [
+    "updated",
+    "object",
+    "obj",
+    "diff",
+    "difference",
+    "deep",
+    "nested"
+  ],
+  "author": "Lyst",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyst/updated-object-diff/issues"
+  },
+  "homepage": "https://github.com/lyst/updated-object-diff#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1"
+  }
+}
