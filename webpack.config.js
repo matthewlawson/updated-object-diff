@@ -1,13 +1,14 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./index.js",
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'updated-object-diff.js',
+    path: path.resolve(__dirname, "dist"),
+    filename: "updated-object-diff.js",
+    globalObject: "this",
     library: {
-        name: 'updatedObjectDiff',
-        type: 'umd',
+      name: "updatedObjectDiff",
+      type: "umd",
     },
   },
 };
