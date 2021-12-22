@@ -1,8 +1,9 @@
-# updated-object-diff
+# updated-obj-diff
 
-A small JavaScript library that returns the updated difference between two JavaScript objects, including nested objects. 
+A small JavaScript library that returns the updated difference between two JavaScript objects, including nested objects.
 
 Features:
+
 - Handles values of data types including arrays, strings and integers
 - Handles situations where keys are not present in both objects
 - Omits keys with null values in both objects
@@ -11,7 +12,7 @@ Features:
 ## Installation
 
 ```
-npm install updated-object-diff
+npm install updated-obj-diff
 ```
 
 ## Usage
@@ -19,7 +20,7 @@ npm install updated-object-diff
 Returns top-level and nested updated values
 
 ```javascript
-const updatedDiff = require("updated-object-diff");
+const updatedDiff = require("updated-obj-diff");
 
 const pokemon1 = {
   species: "pikachu",
@@ -70,7 +71,7 @@ console.log(updatedDiff(pokemon1, pokemon2));
 Returns whole updated arrays
 
 ```javascript
-const updatedDiff = require("updated-object-diff");
+const updatedDiff = require("updated-obj-diff");
 
 const pokemon1 = {
   species: "pikachu",
@@ -102,7 +103,7 @@ console.log(updatedDiff(pokemon1, pokemon2));
 Returns new keys and values
 
 ```javascript
-const updatedDiff = require("updated-object-diff");
+const updatedDiff = require("updated-obj-diff");
 
 const pokemon1 = {
   species: "pikachu",
@@ -124,7 +125,7 @@ console.log(updatedDiff(pokemon1, pokemon2));
 Returns null values for missing keys
 
 ```javascript
-const updatedDiff = require("updated-object-diff");
+const updatedDiff = require("updated-obj-diff");
 
 const pokemon1 = {
   species: "pikachu",
@@ -146,7 +147,7 @@ console.log(updatedDiff(pokemon1, pokemon2));
 Returns null for updated null values that were not previously null
 
 ```javascript
-const updatedDiff = require("updated-object-diff");
+const updatedDiff = require("updated-obj-diff");
 
 const pokemon1 = {
   species: "pikachu",
@@ -171,7 +172,7 @@ console.log(updatedDiff(pokemon1, pokemon2));
 Omits keys that have the value of null in one object, and do not exist in the other object
 
 ```javascript
-const updatedDiff = require("updated-object-diff");
+const updatedDiff = require("updated-obj-diff");
 
 const pokemon1 = {
   species: "pikachu",
