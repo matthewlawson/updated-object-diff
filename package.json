@@ -2,10 +2,11 @@
   "name": "updated-object-diff",
   "version": "1.0.0",
   "description": "A small library that returns the difference between two JavaScript objects, including nested objects, that handles values of all data types.",
-  "main": "index.js",
+  "main": "dist/updated-object-diff.js",
   "scripts": {
     "test": "jest",
-    "prettier": "./node_modules/.bin/prettier . --write"
+    "prettier": "./node_modules/.bin/prettier . --write",
+    "prepare": "webpack"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,8 @@
   },
   "devDependencies": {
     "jest": "^26.6.3",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
   }
 }
